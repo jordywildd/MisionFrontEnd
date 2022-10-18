@@ -16,14 +16,12 @@ Descripción:
 - La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
 - **Practicas**
-  - [Toma de requerimientos](./1.-requerimientos.md)
-    - [Crea tu buyer persona](./2.-buyerPersona.md)
-  - [Publico objetivo](./3.-publicoObjetivo.md)
-  - [Crea tu primer Wireframe UX](./4.-wireframe.md)
-  - [Ahora el UI](./5.-ui.md)
+  - Toma de requerimientos
+    - Crea tu buyer persona
+  - Publico objetivo
+  - Crea tu primer Wireframe UX
+  - Ahora el UI
 
-Para entrar a los contenidos solo tienes que dar click en el título y empezará la aventura.
 
-**_¡Vámonos hasta el espacio y más allá Explorers!_**
 
 [Volver &ldca;](/01%20-%20INTRO/README.md "Regresar a página anterior")
