@@ -24,4 +24,4 @@ Descripción:
 
 
 
-[Volver &ldca;](/01%20-%20INTRO/practicas/README.md "Regresar a página anterior")
+[Volver &ldca;](/01%20-%20INTRO/practicas "Regresar a página anterior")
