@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Selectores/css/styles.css">
+    <title>Selectores CSS</title>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">Home</a>
+    </nav>
+    <article>
+
+        <h1>Selectores CSS</h1>
+        <section>
+            <h2>Selectores simples</h2>
+            <h3>Selectores elementales</h3>
+            <pre>
+                No suelen ser muy utilizados, solo recomendables para casos puntuales.
+                Existen 2 tipos, que a su vez se dividen en subtipos.
+                Selectores Simples
+                Selectores elementales
+                Selector Universal -> *
+                <code>
+                    *{
+                        background-color: lightcoral;
+                    }
+                </code>
+                Selector de tipo o etiqueta -> Nombre de la etiqueta.
+                <code>
+                    h1{
+                        background-color: aliceblue;
+                    }
+                </code>
+        </pre>
+        <figure>
+            <figcaption>Ejemplos</figcaption>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis asperiores est! Ab esse sed, corporis qui fuga vitae illo ex tempora accusantium amet accusamus natus minima voluptas eius optio?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eligendi est tenetur corporis esse, quam quo dolores ipsam exercitationem, eaque voluptatem. Accusamus consequuntur nostrum officiis! Esse numquam id fugit eos.
+            </p>
+            <ul>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi, veniam dolorum distinctio reiciendis facere blanditiis ducimus, nesciunt, obcaecati odit inventore corrupti. Incidunt dolores delectus obcaecati illo itaque. Iure, fuga.
+                </li>
+            </ul>
+        </figure>
+        
+        <hr>
+        <h2>Selectores de atributo</h2>
+        <pre>
+            Existen 3 tipos:
+            id -> id del elemento
+            clase -> clase del elemento
+            otros atributos.
+            
+            <h3>Selectores de atributo - Selector por id.
+            </h3>
+            No es recomendable usarlo ya que uno de los principios de CSS es que los estilos sean reutilizables.
+            <code>
+                #ID{
+                    propiedad:valor;
+                }
+                     </code>
+                     <h3>Selectores de atributo - Selector por clase.</h3>
+                     Es el más recomendable de utilizar para aplicar estilos con css. Una de sus ventajas es que es facilmente reutilizable, solo basta con poner la misma clase a todos los elementos deseados para que se aplique el estilo.
+                     <code>
+                         .clase{
+                             propiedad:valor;
+                            }
+                        </code>
+                        <strong>
+                            Los 2 tipos de selectores, id y clase son case sensitive, por lo que hay que escribir ambas iguales. Por ejemplo title y Title no serían lo mismo.
+                        </strong>
+                        
+                    </pre>
+                    <figure>
+                        <figcaption>Ejemplos</figcaption>
+                        <h3 id="ejemploAtr">Ejemplo selector de atributo por id</h3>
+                        <h3 class="title">Ejemplo selector de atributo por clase</h3>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem numquam explicabo, beatae minus reprehenderit nesciunt sit assumenda voluptates, dicta, praesentium cumque similique incidunt ut repellat eos aspernatur natus labore laboriosam.</p>
+                        <h3 class="title">Ejemplo selector de atributo por clase</h3>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem numquam explicabo, beatae minus reprehenderit nesciunt sit assumenda voluptates, dicta, praesentium cumque similique incidunt ut repellat eos aspernatur natus labore laboriosam.</p>
+                    </figure>
+                    <h3>Selectores de atributo - Otros atibutos</h3>
+                    <pre>
+                        Usado para otro tipo de atributos que no son ni id ni clases. Para esto se usan []
+                        <code>
+                            [href]{
+                                
+                            }
+                            [atributo]{
+                                propiedad: valor;
+                            }
+                            [href="https://www.google.com/"]{
+                                propiedad: valor;
+                            }
+                        </code>
+                        Otra manera sería:
+                        <code>
+                            
+                            [atributo=valor]{
+                                
+                            }
+                        </code>
+                        otra manera con la que se puede comprobar si el atributo empieza por ese valor sería:
+                        <code>
+                            [atributo^= valor]{
+                                
+                }
+                [href^="color"]{
+                    
+                }
+            </code>
+            la manera en la que se aplica un estlo a un atributo que contenga en cualquier parte de su valor lo que se pone como valor en el selector es:
+            <code>
+                [atributo*=valor]
+                [href*=roj]
+            </code>
+            la manera en la que se le aplica el style al atributo en el que el valor termina con esa palabra es:
+            <code>
+                [href$=GB]
+                [atributo$=ultima  del valor]
+            </code>
+            y por último, una manera que permite asignar el estilo a la palabra tenga o no guion
+            <code>
+                [atributo|=valor]
+            </code>
+        </pre>
+        <figure>
+            <figcaption>Ejemplos</figcaption>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks</a>
+            <a href="https://www.google.com/">Google</a>
+            <a href="color-random">Color random</a>
+            <a href="color-verde">color-verde</a>
+            <a href="color-rojo">color-rojo</a>
+            <p lang="en-GB">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut consectetur delectus accusamus perspiciatis quisquam. Veritatis delectus dolorum quia ex, soluta ullam? A magni adipisci unde praesentium ipsum accusantium repellat sapiente.</p>
+        </figure>
+        
+    </section>
+    <section>
+        <h2>
+            Selectores Compuestos
+        </h2>
+        <div>
+            <h3 class="title">
+                Selectores Agrupados
+            </h3>
+            <p class="subtitle">Subtitulo</p>
+            <p class="text1">Para aplicar estilo podrían ponerse 1 por uno parrafo por parrafo, podría crear la clase text1, para el siguiente text2, text3 y text4</p>
+            <pre class="text1">
+                Y de esa manera aplicar el código de la siguiente manera:
+                <code>
+                    .text1{
+                        background-color: darkkhaki;
+                    }
+                    .text2{
+                        background-color: darkkhaki;
+                    }
+                    .text3{
+                        background-color: darkkhaki;
+                    }
+                    .text4{
+                        background-color: darkkhaki;
+                    }
+                </code>
+                Pero la mejor manera, para cumplir el principio de la programación don't    repeat yourself, es la siguiente:
+                <code>
+                    .text1, .text2, .text3, .text4{
+                        background-color: darkslateblue;
+                    }
+                </code>
+            </pre>
+            <p class="text2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum error unde maiores fugit voluptatum numquam, esse, neque voluptas aut dicta doloremque. Suscipit autem nihil nisi doloremque, eaque blanditiis numquam aliquam.</p>
+            <p class="text3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam pariatur molestiae earum sed tempora harum, ullam impedit quibusdam aspernatur facere, voluptate odit ipsum eaque perspiciatis ea culpa suscipit sapiente?</p>
+            <p class="text4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore quidem harum enim blanditiis aliquid dignissimos qui velit, quis esse quisquam, perspiciatis saepe. Officiis deleniti ducimus enim, debitis animi blanditiis.</p>
+
+        </div>
+        <h3>Selectores Combinadores</h3>
+        <h3>
+            Pseudoclases - Pseudoelementos
+        </h3>
+        <p>Estos son selectores avanzados que se verán más adelante</p>
+    </section>
+</article>
+</body>
+</html>
