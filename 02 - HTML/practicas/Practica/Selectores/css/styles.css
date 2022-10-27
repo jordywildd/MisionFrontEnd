@@ -1,0 +1,99 @@
+/* SELECTORES */
+
+/*
+    Existen 2 tipos, que a su vez se dividen en subtipos
+    Selectores Simples
+        Selectores elementales
+         Selector Universal -> *
+         Selector de tipo o etiqueta -> Nombre de la etiqueta.
+        Selectores de atributo
+    Selectores Compuestos
+        Selectores Agrupados
+        Selectores Combinadores
+        Pseudoclases - Pseudoelementos
+*/
+
+/* El sigueinte es un Selector de elemento, el cual hay que usar con mucho cuidado y solo en casos puntuales*/
+/* *{
+    background-color: lightgray;
+} */
+
+/* Selector de etiqueta */
+/* h1{
+    background-color: aliceblue;
+}
+p{
+    background-color: lightblue ;
+}
+ul{
+    background-color: antiquewhite;
+}
+li{
+    background-color: lightpink;
+}
+pre{
+    background-color: lightsteelblue;
+} */
+
+/* Selectores de atributo - Selector por id: No es recomendable usarlo ya que uno de los principios de CSS es que los estilos sean reutilizables. */
+
+code{
+    font-weight: bolder;
+    color: darkred;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ejemploAtr{
+    background-color: lavender;
+}
+
+
+/* Selectores de atributo - Selector de Clase. Este es el más recomendable de usar. */
+.title{
+    background-color: lightslategray;
+}
+.text{
+    background-color: lightpink;
+}
+
+/*Selector de atributo - otros*/
+[href]{
+    background-color: lightgoldenrodyellow;
+}
+[href="https://www.google.com/"]{
+    background-color: purple;
+}
+[href^="color"]{
+    background-color: greenyellow;
+}
+[href*="verd"]{
+    background-color: green;
+}
+[href $="rojo"]{
+    background-color: red;
+}
+[lang|=en]{
+    background-color: cadetblue;
+}
+
+/*Selector compuesto*/
+
+/*
+podrían ponerse de la siguiente manera, 1 por uno
+.text1{
+    background-color: darkkhaki;
+}
+.text2{
+    background-color: darkkhaki;
+}
+.text3{
+    background-color: darkkhaki;
+}
+.text4{
+    background-color: darkkhaki;
+}
+Pero la mejor manera, para cumplir el principio de la programación don't    repeat yourself, es la siguiente:
+*/
+.text1, .text2, .text3, .text4{
+    background-color: lightsalmon;
+}
