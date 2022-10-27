@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- La primera manera y la más recomendada de usar una hoja de estilos -->
+     <link rel="stylesheet" href="/Conectar html y css/css/styles.css">
+    <title>Conectar HTML con CSS</title>
+    <!-- 
+        Otra manera de usar CSS, pero no tan recomendada, ya que un sitio web tiene más de una página html, por lo que si se quiere realizar un cambio habría que hacerlo hoja por hoja.
+
+        Hay excepciones en las cuales si se usa este método de añadir CSS, por ejemplo en hojas estáticas que hacen peticiones a landing pages, o correos electronicos, en los cuáles no es posible usar el otro método.
+    -->
+    <!-- <style> 
+        body{
+            background-color: aqua;
+        }
+        </style>
+    -->
+        <!-- Otra manera de aplicar CSS a las páginas es  con @import, pero de todas las opciones es la menos recomendable, ya que este método es asincrono, lo cual ocasiona que en ocasione cargue el contenido de la página pero no los estilos, y pasado un tiempo de repente se apliquen, desde el punto de UX es una mala experiencia
+        -->
+        <!-- <style>
+            @import url(css/styles.css)
+        </style> -->
+        
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>
+                <a href="/Conectar html y css/Conectar-HTML-con-CSS.html">Conectar-HTML-con-CSS</a>
+            </li>
+            <li>
+                <a href="/Conectar html y css/Sintaxis-CSS.html">Sintaxis-CSS</a>
+            </li>
+            <li>
+                <a href="/Selectores/selectores.html">Selectores-CSS</a>
+            </li>
+            <li>
+                <a href="/Selectores/selectores.html">Selectores-CSS</a>
+            </li>
+        </ol>
+    </nav>
+    <!-- El último método es añadirlo a cada etiqueta, que tampoco se recomienda a menos que sea estrictamente necesario hacerlo de está manera -->
+    <h1 style="background-color: springgreen ;">Conectar HTML con CSS</h1>
+    
+</body>
+</html>
