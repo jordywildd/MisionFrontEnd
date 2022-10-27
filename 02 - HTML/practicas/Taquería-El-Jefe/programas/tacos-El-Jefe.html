@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de la taquería Tacos El Jefe">
+    <link rel="stylesheet" href="/programas/css/styles.css">
+    <title>Tacos "El Jefe"</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tacos "El Jefe", desde 2022</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <figure >
+        <picture >
+            <source src="/assets/img/Tacos El Jefe.png">
+            <img src="/assets/img/Tacos El Jefe.png" alt="Logo Tacos El Jefe">
+        </picture>
+    </figure>
+
+    <hr>
+
+    <section class="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <h3>Tacos grandes</h3>
+                <p>Para razas grandes</p>
+                <ol>
+                    <li>Bisteck ............................ $30</li>
+                    <li>Pollo ............................ $30</li>
+                    <li>Tinga ............................ $30</li>
+                    <li>Carne asada ............................ $30</li>
+                    <li>Carnitas ............................ $30</li>
+                </ol>
+            </li>
+            <li>
+                <h3>Tacos pequeños</h3>
+                <p>Para razas pequeñas</p>
+                <ol>
+                    <li>Bisteck ............................ $20</li>
+                    <li>Pollo ............................ $20</li>
+                    <li>Tinga ............................ $20</li>
+                    <li>Carne asada ............................ $20</li>
+                    <li>Carnitas ............................ $20</li>
+                </ol>
+            </li>
+            <li>
+                <h3>Especiales</h3>
+                <p>Hazlo combo por tan solo $10</p>
+                <dl>
+                    <dt>Labrador</dt>
+                    <dd>Tortilla de maíz con pollo asado.........$40</dd>
+                    <dt>Pastor alemán</dt>
+                    <dd>Tlayuda de pastor con piña y salchicha alemana.....$70</dd>
+                    <dt>Pug</dt>
+                    <dd>Bolillo con frijoles y queso.....$45</dd>
+                    <dt>Corriente</dt>
+                    <dd>Taco de canasta.....$15</dd>
+                    <dt>Adoptado</dt>
+                    <dd>Taco chico sin papas.....$15</dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+    <hr>
+    <section class="ubi">
+        <h2>Ubicación</h2>
+        <h3>Sucursales</h3>
+        <p>Ve a tú centro de adopción (taqueria) más cercana</p>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Ubicación</th>
+                <th>Horarios</th>
+            </tr>
+            <tr>
+                <td>Centro</td>
+                <td>
+                    <a href="https://goo.gl/maps/316XFKkWVV2EMuj39" target="_blank">Colonia Centro
+                        Centro, Ciudad de México, CDMX</a>
+                </td>
+                <td>L-D 24 hrs</td>
+            </tr>
+            <tr>
+                <td>Norte</td>
+                <td>
+                    <a href="https://goo.gl/maps/NJtbPvJvtT94Ekvr9" target="_blank">Av. Wilfrido Massieu 399, Nueva
+                        Industrial Vallejo</a>
+                </td>
+                <td>L-S de 12PM a 10PM</td>
+            </tr>
+            <tr>
+                <td>Sur</td>
+                <td>
+                    <a href="https://goo.gl/maps/4Ld3fwfmhXEQzUpHA" target="_blank">Olímpica
+                        04710 Ciudad de México, CDMX</a>
+                </td>
+                <td>M-V de 10AM a 10 PM</td>
+            </tr>
+            <tr>
+                <td>Oriente</td>
+                <td>
+                    <a href="https://goo.gl/maps/Z5Lwaxx3wYAYrYgaA" target="_blank">Parque Nacional Cerro de la
+                        Estrella</a>
+                </td>
+                <td>M-S 8AM a 9PM</td>
+            </tr>
+            <tr>
+                <td>Poniente</td>
+                <td>
+                    <a href="https://goo.gl/maps/Mi4ctYHXd8TJoZgdA" target="_blank">Hipódromo Condesa
+                        06170 Ciudad de México, CDMX</a>
+                </td>
+                <td>L-D 24 hrs</td>
+            </tr>
+        </table>
+    </section>
+
+
+    <hr>
+    <section class="pedido">
+        <h2>Pedidos</h2>
+        <h3>Haz tu pedido aqui! <strong>Guau!!!</strong></h3>
+
+        <p>¿De qué taquería quieres?</p>
+
+        <form action="/action.js">
+            <select name="pedido" id="pedido">
+                <option value="Norte">Norte</option>
+                <option value="Sur">Sur</option>
+                <option value="Centro">Centro</option>
+                <option value="Oriente">Oriente</option>
+                <option value="Poniente">Poniente</option>
+            </select>
+
+            <p>¿De qué tacos quieres?</p>
+            <input type="checkbox" id="Carnitas" name="Carnitas" value="Carnitas">
+            <label for="Carnitas">Carnitas</label>
+            <input type="number" id="CarnitasNumber" name="CarnitasNumber" placeholder="¿Cuántos">
+            <br>
+            <input type="checkbox" id="Tinga" name="Tinga" value="Tinga">
+            <label for="Tinga">Tinga</label>
+            <input type="number" id="CTingaNumber" name="TingaNumber" placeholder="¿Cuántos">
+            <br>
+            <input type="checkbox" id="Bisteck" name="Bisteck" value="Bisteck">
+            <label for="Bisteck">Bisteck</label>
+            <input type="number" id="BisteckNumber" name="BisteckNumber" placeholder="¿Cuántos">
+            <br>
+            <input type="checkbox" id="Carne asada" name="Carne asada" value="Carne asada">
+            <label for="Carne asada">Carne asada</label>
+            <input type="number" id="CarnitaAsadaNumber" name="CarnitaAsadaNumber" placeholder="¿Cuántos">
+            <br>
+            <input type="checkbox" id="Pollo" name="Pollo" value="Pollo">
+            <label for="Pollo">Pollo</label>
+            <input type="number" id="PolloNumber" name="PolloNumber" placeholder="¿Cuántos">
+            <br><br>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?">
+            <br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="¿Tú teléfono?">
+            <br><br>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Tú dirección?">
+            <br><br>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
